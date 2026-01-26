@@ -68,7 +68,7 @@ The primary goal of this week was to understand how banking operations are suppo
 
 Under the supervision of the IT team, I observed and participated in various technical activities, helping me connect theoretical concepts with real-world banking IT operations.
 
----
+
 
 ### 2. Activities Performed
 
@@ -160,7 +160,6 @@ I observed how printers are:
 
 This allows efficient resource sharing in branches.
 
----
 
 ### 3. Tools and Technologies Observed
 - **Hardware**: Desktops, monitors, switches, routers, UPS, firewalls
@@ -169,7 +168,7 @@ This allows efficient resource sharing in branches.
 - **Software**: Oracle, SQL Server, CBS, Active Directory, Kaspersky
 - **Devices**: Printers, scanners, biometric systems
 
----
+
 
 ### 4. Learning Outcomes
 - Improved understanding of banking IT infrastructure
@@ -178,7 +177,7 @@ This allows efficient resource sharing in branches.
 - Awareness of enterprise software deployment
 - Understanding of data backup and domain management
 
----
+
 
 ### 5. Challenges Faced
 - Understanding complex banking systems
@@ -188,7 +187,7 @@ This allows efficient resource sharing in branches.
 
 These challenges strengthened my problem-solving and analytical skills.
 
----
+
 
 ### 6. Conclusion
 The first week of internship at Askari Bank was a highly valuable learning experience.  

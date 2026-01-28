@@ -109,20 +109,8 @@ I assisted in executing diagnostic commands such as:
 
 These commands help in system cleanup, network diagnosis, and asset management.
 
-#### 2.6 Software Installation and Configuration
-I observed and assisted in installing and configuring:
-- Scanner and biometric software
-- Oracle Database and Microsoft SQL Server
-- Kaspersky Endpoint Security
-- DNS and DHCP Servers
-- Windows Server, Core Banking System (CBS)
-- Active Directory
-- Backup and monitoring tools
-- Office and utility software
 
-I learned how these systems support daily banking operations.
-
-#### 2.7 Hardware Fault Diagnosis
+#### 2.6 Hardware Fault Diagnosis
 I observed a structured troubleshooting process:
 - Checking RAM and cables
 - Identifying faulty hard drive
@@ -130,7 +118,7 @@ I observed a structured troubleshooting process:
 
 This demonstrated systematic hardware diagnostics.
 
-#### 2.8 Black Screen and Boot Issue Troubleshooting
+#### 2.7 Black Screen and Boot Issue Troubleshooting
 I learned steps to resolve boot issues:
 - `Ctrl + Shift + Win + B`
 - `Ctrl + Alt + Delete`
@@ -138,10 +126,10 @@ I learned steps to resolve boot issues:
 - Uninstalling recent updates
 - Using USB recovery media
 
-#### 2.9 Data Backup and Drive Usage
+#### 2.8 Data Backup and Drive Usage
 I learned the importance of saving data on separate drives to protect user data during OS failures or reinstallations.
 
-#### 2.10 Adding Systems to Domain
+#### 2.9 Adding Systems to Domain
 I observed the domain-joining process:
 - System properties configuration
 - Domain authentication
@@ -149,10 +137,10 @@ I observed the domain-joining process:
 
 This ensures centralized control using Active Directory.
 
-#### 2.11 Exporting and Importing Browser Bookmarks
+#### 2.10 Exporting and Importing Browser Bookmarks
 I learned how bookmarks are exported and imported to support system migration and data backup.
 
-#### 2.12 Network Printer Configuration
+#### 2.11 Network Printer Configuration
 I observed how printers are:
 - Connected to the network
 - Assigned IP addresses

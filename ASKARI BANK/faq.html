@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Meridian Business Bank - Tailwind</title>
+    <meta content="Download this free Tailwind CSS Finance website template for Meridian Business Bank. Features a corporate design, fully responsive layout, and includes 13 pre-built pages like index.html, about.html, contact.html." name="description"/>
+    <meta content="free meridian business bank website template, meridian business bank website landing page, tailwind css meridian business bank website theme, responsive meridian business bank website design, corporate meridian business bank website" name="keywords"/>
+    <meta content="Meridian Business Bank - Tailwind" property="og:title"/>
+    <meta content="Download this free Tailwind CSS Finance website template for Meridian Business Bank. Features a corporate design, fully responsive layout, and includes 13 pre-built pages like index.html, about.html, contact.html." property="og:description"/>
+    <meta content="website" property="og:type"/>
+    <meta content="https://freestacktemplates.io/og-previews/meridian_business_bank-finance-corporate-template/index-og.jpg" property="og:image"/>
+    <meta content="https://freestacktemplates.io/tailwind/meridian_business_bank-finance-corporate-template" property="og:url"/>
+    <meta content="summary_large_image" name="twitter:card"/>
+    <meta content="Meridian Business Bank - Tailwind" name="twitter:title"/>
+    <meta content="Download this free Tailwind CSS Finance website template for Meridian Business Bank. Features a corporate design, fully responsive layout, and includes 13 pre-built pages like index.html, about.html, contact.html." name="twitter:description"/>
+    <meta content="https://freestacktemplates.io/og-previews/meridian_business_bank-finance-corporate-template/index-og.jpg" name="twitter:image"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <script defer="" src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="style.css" rel="stylesheet"/>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script defer="" src="scripts.js"></script>
+  </head>
+  <body class="font-sans bg-white dark:bg-slate-900 text-slate-900 dark:text-white antialiased" x-data="{ darkMode: document.documentElement.classList.contains('dark') }">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 dark:bg-slate-900/95 border-b border-slate-200 dark:border-slate-800" x-data="{ mobileMenuOpen: false, servicesOpen: false }">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20 relative">
+
+          <!-- Logo -->
+          <a class="flex items-center gap-3" href="index.html">
+            <div class="w-12 h-12 bg-gradient-to-br from-primary to-primary/80 rounded-lg flex items-center justify-center">
+              <i class="w-7 h-7 text-secondary" data-lucide="landmark"></i>
+            </div>
+            <div class="hidden sm:block">
+              <span class="block text-lg font-display font-bold text-primary dark:text-white">Meridian</span>
+              <span class="block text-xs text-slate-500 dark:text-slate-400 tracking-wide">BUSINESS BANK</span>
+            </div>
+          </a>
+
+          <!-- Desktop Navigation -->
+          <nav class="hidden lg:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
+
+            <!-- Services Dropdown -->
+            <div class="relative" @mouseenter="servicesOpen = true" @mouseleave="servicesOpen = false">
+              <button class="flex items-center gap-1 text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-secondary font-medium transition-colors">Services
+                <i class="w-4 h-4" data-lucide="chevron-down"></i>
+              </button>
+              <div class="absolute top-full left-0 mt-2 w-64 bg-white dark:bg-slate-800 rounded-xl shadow-xl border border-slate-200 dark:border-slate-700 p-2" x-cloak="" x-show="servicesOpen" x-transition:enter="transition ease-out duration-200" x-transition:enter-end="opacity-100 translate-y-0" x-transition:enter-start="opacity-0 translate-y-2">
+                <a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" href="services.html">
+                  <i class="w-5 h-5 text-primary" data-lucide="briefcase"></i>
+                  <div>
+                    <div class="font-medium text-slate-900 dark:text-white">All Services</div>
+                    <div class="text-sm text-slate-500">Overview of solutions</div>
+                  </div>
+                </a>
+                <a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" href="treasury.html">
+                  <i class="w-5 h-5 text-primary" data-lucide="wallet"></i>
+                  <div>
+                    <div class="font-medium text-slate-900 dark:text-white">Treasury</div>
+                    <div class="text-sm text-slate-500">Cash & liquidity</div>
+                  </div>
+                </a>
+                <a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" href="lending.html">
+                  <i class="w-5 h-5 text-primary" data-lucide="hand-coins"></i>
+                  <div>
+                    <div class="font-medium text-slate-900 dark:text-white">Lending</div>
+                    <div class="text-sm text-slate-500">Loans & credit</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-secondary font-medium transition-colors" href="resources.html">Resources</a>
+            <a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-secondary font-medium transition-colors" href="about.html">About</a>
+            <a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-secondary font-medium transition-colors" href="contact.html">Contact</a>
+          </nav>
+
+          <!-- Desktop Actions -->
+          <div class="hidden lg:flex items-center gap-4">
+            <button class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" @click="darkMode = !darkMode; localStorage.setItem('darkMode-meridian_business_bank-finance-corporate', darkMode); document.documentElement.classList.toggle('dark', darkMode)" aria-label="Toggle dark mode">
+              <i class="w-5 h-5 hidden dark:block" data-lucide="sun"></i>
+              <i class="w-5 h-5 block dark:hidden" data-lucide="moon"></i>
+            </button>
+            <a class="px-5 py-2.5 bg-primary text-white rounded-lg font-semibold hover:bg-primary/90 transition-colors flex items-center gap-2" href="login.html">
+              <i class="w-4 h-4" data-lucide="lock"></i> Client Login
+            </a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button class="lg:hidden p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800" @click="mobileMenuOpen = true" aria-label="Open menu">
+            <i class="w-6 h-6" data-lucide="menu"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Overlay -->
+      <div class="lg:hidden fixed inset-0 bg-black/50 z-[60]" @click="mobileMenuOpen = false" x-cloak="" x-show="mobileMenuOpen" x-transition:enter="transition ease-out duration-300" x-transition:enter-end="opacity-100" x-transition:enter-start="opacity-0" x-transition:leave="transition ease-in duration-200" x-transition:leave-end="opacity-0" x-transition:leave-start="opacity-100"></div>
+
+      <!-- Mobile Menu Panel -->
+      <div class="lg:hidden fixed top-0 right-0 h-[100vh] w-full max-w-sm bg-white dark:bg-slate-900 z-[70] overflow-y-auto flex flex-col" x-cloak="" x-show="mobileMenuOpen" x-transition:enter="transition ease-out duration-300" x-transition:enter-end="translate-x-0" x-transition:enter-start="translate-x-full" x-transition:leave="transition ease-in duration-200" x-transition:leave-end="translate-x-full" x-transition:leave-start="translate-x-0">
+        <div class="flex-1 p-6">
+          <div class="flex items-center justify-between mb-8">
+            <a class="flex items-center gap-3" href="index.html">
+              <div class="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 rounded-lg flex items-center justify-center">
+                <i class="w-6 h-6 text-secondary" data-lucide="landmark"></i>
+              </div>
+              <span class="text-lg font-display font-bold text-primary dark:text-white">Meridian</span>
+            </a>
+            <button class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800" @click="mobileMenuOpen = false" aria-label="Close menu">
+              <i class="w-6 h-6" data-lucide="x"></i>
+            </button>
+          </div>
+
+          <nav class="space-y-2">
+            <a class="flex items-center gap-3 px-4 py-3 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="index.html">
+              <i class="w-5 h-5" data-lucide="home"></i> Home
+            </a>
+            <a class="flex items-center gap-3 px-4 py-3 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="services.html">
+              <i class="w-5 h-5" data-lucide="briefcase"></i> Services
+            </a>
+            <a class="flex items-center gap-3 px-4 py-3 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="treasury.html">
+              <i class="w-5 h-5" data-lucide="wallet"></i> Treasury
+            </a>
+            <a class="flex items-center gap-3 px-4 py-3 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="lending.html">
+              <i class="w-5 h-5" data-lucide="hand-coins"></i> Lending
+            </a>
+            <a class="flex items-center gap-3 px-4 py-3 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="resources.html">
+              <i class="w-5 h-5" data-lucide="file-text"></i> Resources
+            </a>
+            <a class="flex items-center gap-3 px-4 py-3 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="about.html">
+              <i class="w-5 h-5" data-lucide="building-2"></i> About
+            </a>
+            <a class="flex items-center gap-3 px-4 py-3 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="contact.html">
+              <i class="w-5 h-5" data-lucide="mail"></i> Contact
+            </a>
+            <a class="flex items-center gap-3 px-4 py-3 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="faq.html">
+              <i class="w-5 h-5" data-lucide="help-circle"></i> FAQ
+            </a>
+          </nav>
+        </div>
+        <div class="mt-auto p-6 border-t border-slate-200 dark:border-slate-700 space-y-4">
+          <button class="w-full flex items-center gap-3 px-4 py-3 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" @click="darkMode = !darkMode; localStorage.setItem('darkMode-meridian_business_bank-finance-corporate', darkMode); document.documentElement.classList.toggle('dark', darkMode)">
+            <i class="w-5 h-5 hidden dark:block" data-lucide="sun"></i>
+            <i class="w-5 h-5 block dark:hidden" data-lucide="moon"></i>
+            <span class="dark:hidden">Dark Mode</span>
+            <span class="hidden dark:inline">Light Mode</span>
+          </button>
+          <a class="flex items-center justify-center gap-2 px-4 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primary/90 transition-colors" href="login.html">
+            <i class="w-5 h-5" data-lucide="lock"></i> Client Login
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- Hero -->
+      <section id="hero" class="pt-32 pb-16 bg-gradient-to-b from-slate-50 to-white dark:from-slate-800 dark:to-slate-900">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 class="text-4xl md:text-5xl font-display font-bold text-slate-900 dark:text-white mb-6">Frequently Asked Questions</h1>
+          <p class="text-xl text-slate-600 dark:text-slate-400">Find answers to common questions about our business banking services.</p>
+        </div>
+      </section>
+
+      <!-- Account Questions -->
+      <section id="account_questions" class="py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          <!-- Account Questions -->
+          <div class="mb-12" x-data="{ openItem: null }">
+            <h2 class="text-2xl font-display font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-3">
+              <i class="w-6 h-6 text-secondary" data-lucide="building-2"></i> Account Questions
+            </h2>
+            <div class="space-y-4">
+              <div class="border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden">
+                <button class="w-full flex items-center justify-between p-6 text-left bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" @click="openItem = openItem === 1 ? null : 1">
+                  <span class="font-semibold text-slate-900 dark:text-white">How do I open a business account?</span>
+                  <i class="w-5 h-5 text-slate-400 transition-transform" :class="openItem === 1 ? 'rotate-180' : ''" data-lucide="chevron-down"></i>
+                </button>
+                <div class="p-6 pt-0 bg-white dark:bg-slate-800" x-cloak="" x-collapse="" x-show="openItem === 1">
+                  <p class="text-slate-600 dark:text-slate-400">
+                    You can open a business account by scheduling a consultation with one of our relationship managers. You'll need your business formation documents, EIN, and identification. We can guide you through the process in person or virtually.
+                  </p>
+                </div>
+              </div>
+              <div class="border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden">
+                <button class="w-full flex items-center justify-between p-6 text-left bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" @click="openItem = openItem === 2 ? null : 2">
+                  <span class="font-semibold text-slate-900 dark:text-white">What are the minimum balance requirements?</span>
+                  <i class="w-5 h-5 text-slate-400 transition-transform" :class="openItem === 2 ? 'rotate-180' : ''" data-lucide="chevron-down"></i>
+                </button>
+                <div class="p-6 pt-0 bg-white dark:bg-slate-800" x-cloak="" x-collapse="" x-show="openItem === 2">
+                  <p class="text-slate-600 dark:text-slate-400">
+                    Our basic business checking has no minimum balance requirement. Premium accounts have varying requirements based on the services included. Contact us for details on specific account types.
+                  </p>
+                </div>
+              </div>
+              <div class="border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden">
+                <button class="w-full flex items-center justify-between p-6 text-left bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" @click="openItem = openItem === 3 ? null : 3">
+                  <span class="font-semibold text-slate-900 dark:text-white">Is my business account FDIC insured?</span>
+                  <i class="w-5 h-5 text-slate-400 transition-transform" :class="openItem === 3 ? 'rotate-180' : ''" data-lucide="chevron-down"></i>
+                </button>
+                <div class="p-6 pt-0 bg-white dark:bg-slate-800" x-cloak="" x-collapse="" x-show="openItem === 3">
+                  <p class="text-slate-600 dark:text-slate-400">
+                    Yes, all deposit accounts are FDIC insured up to $250,000 per depositor. For businesses with larger deposits, we offer expanded FDIC coverage through our network of partner banks.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lending Questions -->
+          <div class="mb-12" x-data="{ openItem: null }">
+            <h2 class="text-2xl font-display font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-3">
+              <i class="w-6 h-6 text-secondary" data-lucide="hand-coins"></i> Lending Questions
+            </h2>
+            <div class="space-y-4">
+              <div class="border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden">
+                <button class="w-full flex items-center justify-between p-6 text-left bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" @click="openItem = openItem === 4 ? null : 4">
+                  <span class="font-semibold text-slate-900 dark:text-white">What loan amounts are available?</span>
+                  <i class="w-5 h-5 text-slate-400 transition-transform" :class="openItem === 4 ? 'rotate-180' : ''" data-lucide="chevron-down"></i>
+                </button>
+                <div class="p-6 pt-0 bg-white dark:bg-slate-800" x-cloak="" x-collapse="" x-show="openItem === 4">
+                  <p class="text-slate-600 dark:text-slate-400">
+                    We offer term loans from $100,000 to $25 million, lines of credit from $50,000 to $10 million, and SBA loans up to $5 million. Equipment financing and commercial real estate loans are available for qualified borrowers.
+                  </p>
+                </div>
+              </div>
+              <div class="border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden">
+                <button class="w-full flex items-center justify-between p-6 text-left bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" @click="openItem = openItem === 5 ? null : 5">
+                  <span class="font-semibold text-slate-900 dark:text-white">How long does loan approval take?</span>
+                  <i class="w-5 h-5 text-slate-400 transition-transform" :class="openItem === 5 ? 'rotate-180' : ''" data-lucide="chevron-down"></i>
+                </button>
+                <div class="p-6 pt-0 bg-white dark:bg-slate-800" x-cloak="" x-collapse="" x-show="openItem === 5">
+                  <p class="text-slate-600 dark:text-slate-400">
+                    Most loan decisions are made within 24-48 hours. Funding typically occurs within 5 business days for standard loans. SBA and commercial real estate loans may take longer due to additional requirements.
+                  </p>
+                </div>
+              </div>
+              <div class="border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden">
+                <button class="w-full flex items-center justify-between p-6 text-left bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" @click="openItem = openItem === 6 ? null : 6">
+                  <span class="font-semibold text-slate-900 dark:text-white">What documents do I need for a loan application?</span>
+                  <i class="w-5 h-5 text-slate-400 transition-transform" :class="openItem === 6 ? 'rotate-180' : ''" data-lucide="chevron-down"></i>
+                </button>
+                <div class="p-6 pt-0 bg-white dark:bg-slate-800" x-cloak="" x-collapse="" x-show="openItem === 6">
+                  <p class="text-slate-600 dark:text-slate-400">
+                    Generally, you'll need 2-3 years of business tax returns, recent financial statements, business plan (for startups), and personal financial statements for guarantors. Our team will guide you through the specific requirements.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Treasury Questions -->
+          <div class="mb-12" x-data="{ openItem: null }">
+            <h2 class="text-2xl font-display font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-3">
+              <i class="w-6 h-6 text-secondary" data-lucide="wallet"></i> Treasury Management
+            </h2>
+            <div class="space-y-4">
+              <div class="border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden">
+                <button class="w-full flex items-center justify-between p-6 text-left bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" @click="openItem = openItem === 7 ? null : 7">
+                  <span class="font-semibold text-slate-900 dark:text-white">What treasury services do you offer?</span>
+                  <i class="w-5 h-5 text-slate-400 transition-transform" :class="openItem === 7 ? 'rotate-180' : ''" data-lucide="chevron-down"></i>
+                </button>
+                <div class="p-6 pt-0 bg-white dark:bg-slate-800" x-cloak="" x-collapse="" x-show="openItem === 7">
+                  <p class="text-slate-600 dark:text-slate-400">
+                    Our treasury suite includes cash concentration, zero balance accounts, lockbox services, ACH origination, wire transfers, positive pay, and comprehensive reporting. We also offer investment solutions for excess cash.
+                  </p>
+                </div>
+              </div>
+              <div class="border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden">
+                <button class="w-full flex items-center justify-between p-6 text-left bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" @click="openItem = openItem === 8 ? null : 8">
+                  <span class="font-semibold text-slate-900 dark:text-white">Can you integrate with our ERP system?</span>
+                  <i class="w-5 h-5 text-slate-400 transition-transform" :class="openItem === 8 ? 'rotate-180' : ''" data-lucide="chevron-down"></i>
+                </button>
+                <div class="p-6 pt-0 bg-white dark:bg-slate-800" x-cloak="" x-collapse="" x-show="openItem === 8">
+                  <p class="text-slate-600 dark:text-slate-400">
+                    Yes, we offer integrations with major ERP systems including SAP, Oracle, NetSuite, QuickBooks, and Sage. Custom API integrations are available for enterprise clients.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Still Have Questions -->
+      <section id="still_have_questions" class="py-16 bg-slate-50 dark:bg-slate-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 class="text-2xl font-display font-bold text-slate-900 dark:text-white mb-4">Still Have Questions?</h2>
+          <p class="text-slate-600 dark:text-slate-400 mb-8">Our team is here to help. Contact us for personalized assistance.</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primary/90 transition-colors" href="contact.html">
+              <i class="w-5 h-5" data-lucide="mail"></i> Contact Us
+            </a>
+            <a class="inline-flex items-center justify-center gap-2 px-6 py-3 border border-slate-300 dark:border-slate-600 rounded-lg font-semibold hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors" href="tel:1-800-555-0199">
+              <i class="w-5 h-5" data-lucide="phone"></i> 1-800-555-0199
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-primary dark:bg-slate-950 text-white">
+
+      <!-- Main Footer -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-12">
+
+          <!-- Brand -->
+          <div class="lg:col-span-2">
+            <a class="flex items-center gap-3 mb-6" href="index.html">
+              <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
+                <i class="w-7 h-7 text-secondary" data-lucide="landmark"></i>
+              </div>
+              <div>
+                <span class="block text-lg font-display font-bold text-white">Meridian</span>
+                <span class="block text-xs text-white/60 tracking-wide">BUSINESS BANK</span>
+              </div>
+            </a>
+            <p class="text-white/70 mb-6 max-w-sm">
+              Empowering businesses with innovative banking solutions since 1952. Your growth is our priority.
+            </p>
+            <div class="flex items-center gap-4">
+              <a class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-secondary hover:text-primary transition-colors" aria-label="LinkedIn" href="javascript:void(0)" onclick="alert('LinkedIn - Demo')">
+                <img class="w-5 h-5" alt="LinkedIn" src="/assets/tech-icons/dark/linkedin.svg"/>
+              </a>
+              <a class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-secondary hover:text-primary transition-colors" aria-label="Twitter" href="javascript:void(0)" onclick="alert('Twitter - Demo')">
+                <img class="w-5 h-5" alt="Twitter" src="/assets/tech-icons/dark/twitter.svg"/>
+              </a>
+              <a class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-secondary hover:text-primary transition-colors" aria-label="Facebook" href="javascript:void(0)" onclick="alert('Facebook - Demo')">
+                <svg class="w-5 h-5 dark:hidden" fill="none" viewbox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+                  <rect fill="#3d5a98" height="118.35" rx="6.53" ry="6.53" width="118.35" x="4.83" y="4.83"></rect>
+                  <path d="M86.48 123.17V77.34h15.38l2.3-17.86H86.48v-11.4c0-5.17 1.44-8.7 8.85-8.7h9.46v-16A126.56 126.56 0 0091 22.7c-13.62 0-23 8.3-23 23.61v13.17H52.62v17.86H68v45.83z" fill="#fff"></path>
+                </svg>
+                <svg class="w-5 h-5 hidden dark:block" fill="none" viewbox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+                  <rect fill="#3d5a98" height="118.35" rx="6.53" ry="6.53" width="118.35" x="4.83" y="4.83"></rect>
+                  <path d="M86.48 123.17V77.34h15.38l2.3-17.86H86.48v-11.4c0-5.17 1.44-8.7 8.85-8.7h9.46v-16A126.56 126.56 0 0091 22.7c-13.62 0-23 8.3-23 23.61v13.17H52.62v17.86H68v45.83z" fill="#fff"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Services -->
+          <div>
+            <h4 class="font-display font-bold text-white mb-4">Services</h4>
+            <ul class="space-y-3">
+              <li>
+                <a class="text-white/70 hover:text-secondary transition-colors" href="services.html">All Services</a>
+              </li>
+              <li>
+                <a class="text-white/70 hover:text-secondary transition-colors" href="treasury.html">Treasury Management</a>
+              </li>
+              <li>
+                <a class="text-white/70 hover:text-secondary transition-colors" href="lending.html">Business Lending</a>
+              </li>
+              <li>
+                <a class="text-white/70 hover:text-secondary transition-colors" href="security.html">Security</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Company -->
+          <div>
+            <h4 class="font-display font-bold text-white mb-4">Company</h4>
+            <ul class="space-y-3">
+              <li>
+                <a class="text-white/70 hover:text-secondary transition-colors" href="about.html">About Us</a>
+              </li>
+              <li>
+                <a class="text-white/70 hover:text-secondary transition-colors" href="careers.html">Careers</a>
+              </li>
+              <li>
+                <a class="text-white/70 hover:text-secondary transition-colors" href="resources.html">Resources</a>
+              </li>
+              <li>
+                <a class="text-white/70 hover:text-secondary transition-colors" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Support -->
+          <div>
+            <h4 class="font-display font-bold text-white mb-4">Support</h4>
+            <ul class="space-y-3">
+              <li>
+                <a class="text-white/70 hover:text-secondary transition-colors" href="faq.html">FAQ</a>
+              </li>
+              <li>
+                <a class="text-white/70 hover:text-secondary transition-colors" href="login.html">Client Portal</a>
+              </li>
+              <li>
+                <a class="text-white/70 hover:text-secondary transition-colors" href="privacy.html">Privacy Policy</a>
+              </li>
+              <li>
+                <a class="text-white/70 hover:text-secondary transition-colors" href="terms.html">Terms of Service</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trust Badges -->
+      <div class="border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div class="flex flex-wrap items-center justify-center gap-8">
+            <div class="flex items-center gap-2 text-white/60">
+              <i class="w-5 h-5 text-secondary" data-lucide="shield-check"></i>
+              <span class="text-sm font-medium">FDIC Member</span>
+            </div>
+            <div class="flex items-center gap-2 text-white/60">
+              <i class="w-5 h-5 text-secondary" data-lucide="award"></i>
+              <span class="text-sm font-medium">SOC 2 Type II Certified</span>
+            </div>
+            <div class="flex items-center gap-2 text-white/60">
+              <i class="w-5 h-5 text-secondary" data-lucide="check-circle"></i>
+              <span class="text-sm font-medium">BBB A+ Rating</span>
+            </div>
+            <div class="flex items-center gap-2 text-white/60">
+              <i class="w-5 h-5 text-secondary" data-lucide="lock"></i>
+              <span class="text-sm font-medium">256-bit Encryption</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/60">
+            <p>© 2025 Meridian Business Bank. All rights reserved.</p>
+            <div class="flex items-center gap-6">
+              <a class="hover:text-secondary transition-colors" href="privacy.html">Privacy</a>
+              <a class="hover:text-secondary transition-colors" href="terms.html">Terms</a>
+              <a class="hover:text-secondary transition-colors" href="security.html">Security</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

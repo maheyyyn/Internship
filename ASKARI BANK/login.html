@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<!-- HEAD  -->
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Askari Bank | A Relationship You Can Bank On</title>
+  <meta content="Askari Bank Pakistan - Offering Corporate, Consumer, Islamic and Digital Banking solutions." name="description" />
+  <meta content="askari bank, pakistan bank, internet banking, islamic banking, consumer finance" name="keywords" />
+
+  <meta content="Askari Bank" property="og:title" />
+  <meta content="A Relationship You Can Bank On." property="og:description" />
+  <meta content="website" property="og:type" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind.config.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <script defer="" src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link href="style.css" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script defer="" src="scripts.js"></script>
+</head>
+ <body class="bg-slate-50 dark:bg-slate-950 font-sans antialiased">
+  <div class="min-h-screen flex flex-col md:flex-row">
+    
+    <div class="hidden md:flex md:w-1/2 bg-primary relative overflow-hidden items-center justify-center p-12">
+      <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-0 left-0 w-96 h-96 bg-white rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-secondary rounded-full translate-x-1/2 translate-y-1/2"></div>
+      </div>
+
+      <div class="relative z-10 max-w-lg text-center">
+        <h1 class="text-4xl font-display font-bold text-white mb-6">Secure Digital Banking</h1>
+        <p class="text-xl text-white/80 mb-12">Experience the convenience of Askari I-Net Banking with enhanced security features.</p>
+        
+        <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 text-left">
+          <div class="flex items-center gap-3 mb-4 text-secondary">
+            <i data-lucide="shield-check" class="w-6 h-6"></i>
+            <span class="font-bold uppercase tracking-wider text-sm">Security Reminders</span>
+          </div>
+          <ul class="space-y-4 text-sm text-white/90">
+            <li class="flex gap-3">
+              <span class="text-secondary">•</span> 
+              Never share your OTP, Password, or PIN with anyone, including bank staff.
+            </li>
+            <li class="flex gap-3">
+              <span class="text-secondary">•</span> 
+              Always ensure you are visiting the official https://akbl.com.pk website.
+            </li>
+            <li class="flex gap-3">
+              <span class="text-secondary">•</span> 
+              Change your internet banking password periodically for better protection.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex-1 flex items-center justify-center p-6 sm:p-12 bg-white dark:bg-slate-900">
+      <div class="w-full max-w-md">
+        <div class="text-center mb-10">
+          <div class="inline-flex items-center justify-center w-16 h-16 bg-primary/5 rounded-2xl mb-4">
+            <i data-lucide="lock" class="w-8 h-8 text-primary dark:text-secondary"></i>
+          </div>
+          <h2 class="text-2xl font-display font-bold text-slate-900 dark:text-white">I-Net Banking Login</h2>
+          <p class="text-slate-500 dark:text-slate-400 mt-2">Enter your credentials to access your account</p>
+        </div>
+
+        <form action="#" class="space-y-6">
+          <div class="space-y-2">
+            <label for="user_id" class="text-sm font-semibold text-slate-700 dark:text-slate-300">User ID</label>
+            <div class="relative">
+              <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
+                <i data-lucide="user" class="w-5 h-5"></i>
+              </span>
+              <input type="text" id="user_id" placeholder="Enter your User ID" 
+                class="w-full pl-12 pr-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none transition-all">
+            </div>
+          </div>
+
+          <div class="space-y-2">
+            <div class="flex justify-between items-center">
+              <label for="password" class="text-sm font-semibold text-slate-700 dark:text-slate-300">Password</label>
+              <a href="#" class="text-xs font-bold text-primary dark:text-secondary hover:underline">Forgot Password?</a>
+            </div>
+            <div class="relative">
+              <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
+                <i data-lucide="key-round" class="w-5 h-5"></i>
+              </span>
+              <input type="password" id="password" placeholder="••••••••" 
+                class="w-full pl-12 pr-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none transition-all">
+              <button type="button" class="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600">
+                <i data-lucide="eye" class="w-5 h-5"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="p-4 bg-slate-50 dark:bg-slate-800 rounded-xl border border-dashed border-slate-300 dark:border-slate-600 flex items-center justify-between">
+             <div class="flex items-center gap-2">
+               <input type="checkbox" id="captcha" class="w-4 h-4 rounded border-slate-300">
+               <label for="captcha" class="text-sm text-slate-600 dark:text-slate-400">I am not a robot</label>
+             </div>
+             <i data-lucide="shield" class="w-6 h-6 text-slate-300"></i>
+          </div>
+
+          <button type="submit" class="w-full py-4 bg-primary text-white rounded-xl font-bold hover:bg-primary/90 transition-all shadow-lg flex items-center justify-center gap-2">
+            Login Securely
+            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+          </button>
+        </form>
+
+        <div class="mt-8 pt-8 border-t border-slate-100 dark:border-slate-800 text-center">
+          <p class="text-sm text-slate-500">Don't have an I-Net Banking account?</p>
+          <a href="#" class="inline-block mt-2 text-primary dark:text-secondary font-bold hover:underline">Register Now</a>
+        </div>
+        
+        <div class="mt-8 flex justify-center gap-6">
+          <a href="index.html" class="text-xs text-slate-400 hover:text-primary flex items-center gap-1">
+            <i data-lucide="home" class="w-3 h-3"></i> Home
+          </a>
+          <a href="contact.html" class="text-xs text-slate-400 hover:text-primary flex items-center gap-1">
+            <i data-lucide="phone" class="w-3 h-3"></i> Support
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

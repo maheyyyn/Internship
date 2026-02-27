@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<!-- HEAD  -->
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Askari Bank | A Relationship You Can Bank On</title>
+  <meta content="Askari Bank Pakistan - Offering Corporate, Consumer, Islamic and Digital Banking solutions." name="description" />
+  <meta content="askari bank, pakistan bank, internet banking, islamic banking, consumer finance" name="keywords" />
+
+  <meta content="Askari Bank" property="og:title" />
+  <meta content="A Relationship You Can Bank On." property="og:description" />
+  <meta content="website" property="og:type" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind.config.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <script defer="" src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link href="style.css" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script defer="" src="scripts.js"></script>
+</head>
+<!-- BODY -->
+<body class="font-sans bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-white antialiased bg-fixed" 
+  x-data="{ darkMode: document.documentElement.classList.contains('dark') }">
+<!-- HEADER -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/95 dark:bg-slate-900/95 border-b border-slate-200 dark:border-slate-800" x-data="{ mobileMenuOpen: false, bankingOpen: false, accountsOpen: false }">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20 relative">
+
+        <a class="flex items-center gap-3" href="index.html">
+          <div class="w-12 h-12 bg-gradient-to-br from-primary to-green-700 rounded-lg flex items-center justify-center">
+            <i class="w-7 h-7 text-white" data-lucide="shield"></i>
+          </div>
+          <div class="hidden sm:block">
+            <span class="block text-xl font-display font-bold text-primary dark:text-white uppercase tracking-tight">Askari Bank</span>
+            <span class="block text-[10px] text-slate-500 dark:text-slate-400 tracking-widest uppercase">A Relationship You Can Bank On</span>
+          </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-6 absolute left-1/2 -translate-x-1/2">
+          <a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-green-400 font-medium transition-colors" href="index.html">Home</a>
+          <a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-green-400 font-medium transition-colors" href="about.html">About Us</a>
+          <a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-green-400 font-medium transition-colors" href="cards.html">Cards</a>
+
+        <div class="relative" @mouseenter="accountsOpen = true" @mouseleave="accountsOpen = false">
+            <button class="flex items-center gap-1 text-slate-700 dark:text-slate-100 hover:text-primary font-medium transition-colors">
+              Accounts <i class="w-4 h-4" data-lucide="chevron-down"></i>
+            </button>
+            <div class="absolute top-full left-0 mt-0 pt-4 w-60 bg-white dark:bg-slate-800 rounded-xl shadow-xl border border-slate-100 dark:border-slate-700 p-2" x-cloak x-show="accountsOpen" x-transition>
+              
+              <a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" href="current-account.html">
+                <i class="w-4 h-4 text-primary" data-lucide="refresh-cw"></i>
+                <div class="font-medium text-slate-900 dark:text-white text-sm">Current Account</div>
+              </a>
+
+              <a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" href="savings-account.html">
+                <i class="w-4 h-4 text-primary" data-lucide="trending-up"></i>
+                <div class="font-medium text-slate-900 dark:text-white text-sm">Savings Account</div>
+              </a>
+
+              <a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" href="women-account.html">
+                <i class="w-4 h-4 text-primary" data-lucide="user-round"></i>
+                <div class="font-medium text-slate-900 dark:text-white text-sm">Women Account</div>
+              </a>
+
+            </div>
+          </div>
+
+          <div class="relative" @mouseenter="bankingOpen = true" @mouseleave="bankingOpen = false">
+            <button class="flex items-center gap-1 text-slate-700 dark:text-slate-100 hover:text-primary font-medium transition-colors">
+              Banking <i class="w-4 h-4" data-lucide="chevron-down"></i>
+            </button>
+            <div class="absolute top-full left-0 mt-0 pt-4 w-60 bg-white dark:bg-slate-800 rounded-xl shadow-xl border border-slate-100 dark:border-slate-700 p-2" x-cloak x-show="bankingOpen" x-transition>
+              <a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" href="personal-banking.html">
+                <i class="w-4 h-4 text-primary" data-lucide="user"></i>
+                <div class="font-medium text-slate-900 dark:text-white text-sm">Personal Banking</div>
+              </a>
+              <a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" href="islamic-banking.html">
+                <i class="w-4 h-4 text-primary" data-lucide="moon"></i>
+                <div class="font-medium text-slate-900 dark:text-white text-sm">Islamic Banking</div>
+              </a>
+              <a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" href="corporate-banking.html">
+                <i class="w-4 h-4 text-primary" data-lucide="briefcase"></i>
+                <div class="font-medium text-slate-900 dark:text-white text-sm">Corporate Banking</div>
+              </a>
+              <a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" href="digital-banking.html">
+                <i class="w-4 h-4 text-primary" data-lucide="smartphone"></i>
+                <div class="font-medium text-slate-900 dark:text-white text-sm">Digital Banking</div>
+              </a>
+            </div>
+          </div>
+
+          <a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-green-400 font-medium transition-colors" href="contact.html">Contact</a>
+        </nav>
+
+        <div class="hidden lg:flex items-center gap-3">
+          <button class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" @click="darkMode = !darkMode; localStorage.setItem('darkMode-askari', darkMode); document.documentElement.classList.toggle('dark', darkMode)" aria-label="Toggle dark mode">
+            <i class="w-5 h-5 hidden dark:block" data-lucide="sun"></i>
+            <i class="w-5 h-5 block dark:hidden" data-lucide="moon"></i>
+          </button>
+          
+          <a class="px-4 py-2 border-2 border-primary text-primary dark:text-white dark:border-white/20 rounded-lg font-semibold hover:bg-primary hover:text-white transition-all text-sm" href="open-account.html">
+            Open an Account
+          </a>
+
+          <a class="px-5 py-2.5 bg-primary text-white rounded-lg font-semibold hover:bg-primary/90 transition-colors flex items-center gap-2 shadow-md shadow-primary/20 text-sm" href="login.html">
+            <i class="w-4 h-4" data-lucide="lock"></i> Login
+          </a>
+        </div>
+
+        <button class="lg:hidden p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800" @click="mobileMenuOpen = true">
+          <i class="w-6 h-6" data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+<!-- HEADER ENDED -->
+  <main>
+    <section id="hero" class="relative pt-32 pb-20 lg:pt-40 lg:pb-32 bg-gradient-to-br from-green-900 via-primary to-green-800 overflow-hidden">
+      <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=1920&q=80')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <div class="inline-flex items-center gap-2 px-4 py-2 bg-yellow-400/20 text-yellow-300 rounded-full text-sm font-medium mb-6 border border-yellow-400/30">
+              <i class="w-4 h-4" data-lucide="award"></i> Award Winning Service
+            </div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 leading-tight">
+              Empowering Your <br />
+              <span class="text-secondary">Financial Future</span>
+            </h1>
+            <p class="text-xl text-white/80 mb-8 max-w-lg">Experience seamless banking with Askari. From state-of-the-art Digital Banking to personalized Islamic Finance solutions.</p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-secondary text-green-900 rounded-lg font-bold hover:bg-yellow-300 transition-all shadow-lg" href="login.html">
+                Open Account <i class="w-5 h-5" data-lucide="arrow-right"></i>
+              </a>
+              <a class="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-white/30 text-white rounded-lg font-semibold hover:bg-white/10 transition-colors" href="services.html">Our Products</a>
+            </div>
+          </div>
+          <div class="hidden lg:block">
+            <div class="relative">
+              <div class="absolute -inset-4 bg-secondary/20 rounded-2xl blur-2xl"></div>
+              <img class="relative rounded-2xl shadow-2xl border border-white/10" alt="Banking professionals" src="askari-img.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- NETWORKS --OUR STRATEGIC PARTNERS -->
+    <section id="networks" class="py-20 bg-transparent border-y border-slate-200 dark:border-primary/20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-2xl md:text-3xl font-display font-bold text-corporate dark:text-white mb-2">Our Strategic Partners</h2>
+          <p class="text-slate-600 dark:text-slate-300 uppercase tracking-widest text-xs font-bold">Trusted Global Networks</p>
+        </div>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="group p-6 bg-white/50 dark:bg-primary/10 rounded-2xl border border-slate-200 dark:border-primary/20 hover:border-primary transition-all duration-300 flex flex-col items-center text-center shadow-sm hover:shadow-md backdrop-blur-sm">
+            <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+              <i data-lucide="network" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-corporate dark:text-white group-hover:text-primary transition-colors">1LINK</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Interbank Network</p>
+          </div>
+          <div class="group p-6 bg-white/50 dark:bg-primary/10 rounded-2xl border border-slate-200 dark:border-primary/20 hover:border-primary transition-all duration-300 flex flex-col items-center text-center shadow-sm hover:shadow-md backdrop-blur-sm">
+            <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+              <i data-lucide="credit-card" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-corporate dark:text-white group-hover:text-primary transition-colors">PayPak</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Domestic Payment</p>
+          </div>
+          <div class="group p-6 bg-white/50 dark:bg-primary/10 rounded-2xl border border-slate-200 dark:border-primary/20 hover:border-primary transition-all duration-300 flex flex-col items-center text-center shadow-sm hover:shadow-md backdrop-blur-sm">
+            <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+              <i data-lucide="globe" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-corporate dark:text-white group-hover:text-primary transition-colors">VISA</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Global Acceptance</p>
+          </div>
+          <div class="group p-6 bg-white/50 dark:bg-primary/10 rounded-2xl border border-slate-200 dark:border-primary/20 hover:border-primary transition-all duration-300 flex flex-col items-center text-center shadow-sm hover:shadow-md backdrop-blur-sm">
+            <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+              <i data-lucide="layers" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-corporate dark:text-white group-hover:text-primary transition-colors">MasterCard</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Secure Payments</p>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- SOLUTIONS -->
+    <section id="solutions" class="py-20 lg:py-28 bg-transparent">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-display font-bold text-slate-900 dark:text-white mb-4">Comprehensive Solutions</h2>
+          <p class="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">Tailored financial services designed for the modern Pakistani economy.</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <a class="group p-8 bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary hover:shadow-xl transition-all" href="lending.html">
+            <div class="w-14 h-14 bg-primary/10 dark:bg-primary/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+              <i class="w-7 h-7 text-primary dark:text-green-400 group-hover:text-white" data-lucide="user"></i>
+            </div>
+            <h3 class="text-xl font-display font-bold text-slate-900 dark:text-white mb-2">Consumer Banking</h3>
+            <p class="text-slate-600 dark:text-slate-400 mb-4">Personal Loans, Mortgage Finance, and Auto Loans tailored to your needs.</p>
+            <span class="inline-flex items-center gap-1 text-primary dark:text-green-400 font-semibold group-hover:gap-2 transition-all">Learn More <i class="w-4 h-4" data-lucide="arrow-right"></i></span>
+          </a>
+          <a class="group p-8 bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary hover:shadow-xl transition-all" href="treasury.html">
+            <div class="w-14 h-14 bg-primary/10 dark:bg-primary/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+              <i class="w-7 h-7 text-primary dark:text-green-400 group-hover:text-white" data-lucide="moon"></i>
+            </div>
+            <h3 class="text-xl font-display font-bold text-slate-900 dark:text-white mb-2">Islamic Banking</h3>
+            <p class="text-slate-600 dark:text-slate-400 mb-4">Shariah-compliant financial solutions including Diminishing Musharakah.</p>
+            <span class="inline-flex items-center gap-1 text-primary dark:text-green-400 font-semibold group-hover:gap-2 transition-all">Learn More <i class="w-4 h-4" data-lucide="arrow-right"></i></span>
+          </a>
+          <a class="group p-8 bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary hover:shadow-xl transition-all" href="services.html">
+            <div class="w-14 h-14 bg-primary/10 dark:bg-primary/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+              <i class="w-7 h-7 text-primary dark:text-green-400 group-hover:text-white" data-lucide="smartphone"></i>
+            </div>
+            <h3 class="text-xl font-display font-bold text-slate-900 dark:text-white mb-2">Digital Banking</h3>
+            <p class="text-slate-600 dark:text-slate-400 mb-4">Askari I-Net and Mobile App services for banking on the go.</p>
+            <span class="inline-flex items-center gap-1 text-primary dark:text-green-400 font-semibold group-hover:gap-2 transition-all">Learn More <i class="w-4 h-4" data-lucide="arrow-right"></i></span>
+          </a>
+          <a class="group p-8 bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary hover:shadow-xl transition-all" href="services.html">
+            <div class="w-14 h-14 bg-primary/10 dark:bg-primary/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+              <i class="w-7 h-7 text-primary dark:text-green-400 group-hover:text-white" data-lucide="building-2"></i>
+            </div>
+            <h3 class="text-xl font-display font-bold text-slate-900 dark:text-white mb-2">Corporate</h3>
+            <p class="text-slate-600 dark:text-slate-400 mb-4">Trade Finance, Cash Management, and Corporate Lending.</p>
+            <span class="inline-flex items-center gap-1 text-primary dark:text-green-400 font-semibold group-hover:gap-2 transition-all">Learn More <i class="w-4 h-4" data-lucide="arrow-right"></i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+<!-- STATISTICS -->
+<section id="statistics" class="py-20 lg:py-28 bg-transparent">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-display font-bold text-slate-900 dark:text-white mb-4">
+            Our Impact in Numbers
+          </h2>
+          <p class="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+            A legacy of trust and excellence built over three decades of dedicated service.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          
+          <div class="group p-8 bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary hover:shadow-xl transition-all text-center">
+            <div class="w-14 h-14 bg-primary/10 dark:bg-primary/20 rounded-xl flex items-center justify-center mb-6 mx-auto group-hover:bg-primary transition-colors">
+              <i class="w-7 h-7 text-primary dark:text-green-400 group-hover:text-white" data-lucide="map-pin"></i>
+            </div>
+            <div class="text-4xl font-display font-bold text-primary dark:text-secondary mb-2">600+</div>
+            <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Branches Nationwide</h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400 mt-2">Always near you</p>
+          </div>
+
+          <div class="group p-8 bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary hover:shadow-xl transition-all text-center">
+            <div class="w-14 h-14 bg-primary/10 dark:bg-primary/20 rounded-xl flex items-center justify-center mb-6 mx-auto group-hover:bg-primary transition-colors">
+              <i class="w-7 h-7 text-primary dark:text-green-400 group-hover:text-white" data-lucide="users"></i>
+            </div>
+            <div class="text-4xl font-display font-bold text-primary dark:text-secondary mb-2">1M+</div>
+            <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Trusted Customers</h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400 mt-2">Growing together</p>
+          </div>
+
+          <div class="group p-8 bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary hover:shadow-xl transition-all text-center">
+            <div class="w-14 h-14 bg-primary/10 dark:bg-primary/20 rounded-xl flex items-center justify-center mb-6 mx-auto group-hover:bg-primary transition-colors">
+              <i class="w-7 h-7 text-primary dark:text-green-400 group-hover:text-white" data-lucide="calendar"></i>
+            </div>
+            <div class="text-4xl font-display font-bold text-primary dark:text-secondary mb-2">30+</div>
+            <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Years of Service</h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400 mt-2">Legacy of excellence</p>
+          </div>
+
+          <div class="group p-8 bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary hover:shadow-xl transition-all text-center">
+            <div class="w-14 h-14 bg-primary/10 dark:bg-primary/20 rounded-xl flex items-center justify-center mb-6 mx-auto group-hover:bg-primary transition-colors">
+              <i class="w-7 h-7 text-primary dark:text-green-400 group-hover:text-white" data-lucide="clock"></i>
+            </div>
+            <div class="text-4xl font-display font-bold text-primary dark:text-secondary mb-2">24/7</div>
+            <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Digital Support</h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400 mt-2">Banking never stops</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+<section id="testimonial" class="py-20 lg:py-28 bg-transparent">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        
+        <div class="mb-12">
+          <h2 class="text-3xl md:text-4xl font-display font-bold text-slate-900 dark:text-white mb-4">
+            Voices of Trust
+          </h2>
+          <p class="text-lg text-slate-600 dark:text-slate-400">
+            What our partners say about their journey with Askari Bank.
+          </p>
+        </div>
+
+        <div class="inline-flex items-center gap-1 mb-8">
+          <i class="w-6 h-6 text-secondary fill-secondary" data-lucide="star"></i>
+          <i class="w-6 h-6 text-secondary fill-secondary" data-lucide="star"></i>
+          <i class="w-6 h-6 text-secondary fill-secondary" data-lucide="star"></i>
+          <i class="w-6 h-6 text-secondary fill-secondary" data-lucide="star"></i>
+          <i class="w-6 h-6 text-secondary fill-secondary" data-lucide="star"></i>
+        </div>
+        
+        <blockquote class="text-2xl md:text-3xl font-display text-slate-900 dark:text-white mb-8 leading-relaxed italic">
+          "Askari Bank's digital platform has transformed how we manage our corporate payroll. Secure, fast, and incredibly reliable."
+        </blockquote>
+        
+        <div class="flex items-center justify-center gap-4">
+          <div class="w-14 h-14 bg-primary/10 dark:bg-primary/20 rounded-full flex items-center justify-center border border-primary/20">
+            <span class="text-xl font-bold text-primary dark:text-green-400">MA</span>
+          </div>
+          <div class="text-left">
+            <p class="font-semibold text-slate-900 dark:text-white">Muhammad Abdullah</p>
+            <p class="text-slate-600 dark:text-slate-400">CEO, Hassan Textiles Ltd.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- CALL TO ACTION  -->
+<section id="cta" class="py-20 lg:py-28 bg-transparent relative overflow-hidden border-t border-slate-200 dark:border-slate-800">
+      <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1920&q=80')] bg-cover bg-center opacity-[0.03] dark:opacity-[0.05]"></div>
+      
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl md:text-4xl font-display font-bold text-slate-900 dark:text-white mb-6">
+          Ready to Switch to Askari?
+        </h2>
+        <p class="text-xl text-slate-600 dark:text-slate-400 mb-8 max-w-2xl mx-auto">
+          Visit your nearest branch or download the Askari Mobile App today.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white rounded-lg font-bold hover:bg-primary/90 transition-all shadow-lg shadow-primary/20" href="contact.html">
+            Locate Branch 
+            <i class="w-5 h-5" data-lucide="map-pin"></i>
+          </a>
+          <a class="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-primary/20 dark:border-white/20 text-primary dark:text-white rounded-lg font-semibold hover:bg-slate-100 dark:hover:bg-white/10 transition-colors" href="tel:111-000-787">
+            <i class="w-5 h-5" data-lucide="phone"></i> 111-000-787
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+<!-- FOOTER -->
+  <footer class="bg-corporate text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-12">
+        <div class="lg:col-span-2">
+          <a class="flex items-center gap-3 mb-6" href="index.html">
+            <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
+              <i class="w-7 h-7 text-secondary" data-lucide="shield"></i>
+            </div>
+            <div>
+              <span class="block text-lg font-display font-bold text-white">Askari Bank</span>
+              <span class="block text-xs text-white/60 tracking-wide">A RELATIONSHIP YOU CAN BANK ON</span>
+            </div>
+          </a>
+          <p class="text-white/70 mb-6 max-w-sm">Empowering businesses and individuals with innovative banking solutions.</p>
+          <div class="flex items-center gap-4">
+            <a class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-secondary hover:text-corporate transition-colors" href="#"><i class="w-5 h-5" data-lucide="linkedin"></i></a>
+            <a class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-secondary hover:text-corporate transition-colors" href="#"><i class="w-5 h-5" data-lucide="twitter"></i></a>
+            <a class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-secondary hover:text-corporate transition-colors" href="#"><i class="w-5 h-5" data-lucide="facebook"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-display font-bold text-white mb-4">Banking</h4>
+          <ul class="space-y-3">
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="lending.html">Personal Banking</a></li>
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="services.html">Corporate Banking</a></li>
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="treasury.html">Islamic Banking</a></li>
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="services.html">Digital Banking</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-display font-bold text-white mb-4">Company</h4>
+          <ul class="space-y-3">
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="about.html">About Us</a></li>
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="careers.html">Careers</a></li>
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="news.html">News & Media</a></li>
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-display font-bold text-white mb-4">Support</h4>
+          <ul class="space-y-3">
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="faq.html">Help Center/FAQ's</a></li>
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="privacy.html">Privacy Policy</a></li>
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="terms.html">Terms of Service</a></li>
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="security.html">Security</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-white/60 text-sm">© 2024 Askari Bank. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

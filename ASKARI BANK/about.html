@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<!-- HEAD  -->
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>About us</title>
+  <meta content="Askari Bank Pakistan - Offering Corporate, Consumer, Islamic and Digital Banking solutions." name="description" />
+  <meta content="askari bank, pakistan bank, internet banking, islamic banking, consumer finance" name="keywords" />
+
+  <meta content="Askari Bank" property="og:title" />
+  <meta content="A Relationship You Can Bank On." property="og:description" />
+  <meta content="website" property="og:type" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind.config.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <script defer="" src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link href="style.css" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script defer="" src="scripts.js"></script>
+</head>
+  <body class="font-sans bg-white dark:bg-slate-900 text-slate-900 dark:text-white antialiased" x-data="{ darkMode: document.documentElement.classList.contains('dark') }">
+<!-- HEADER -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 dark:bg-slate-900/95 border-b border-slate-200 dark:border-slate-800" x-data="{ mobileMenuOpen: false, bankingOpen: false, accountsOpen: false }">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20 relative">
+
+        <a class="flex items-center gap-3" href="index.html">
+          <div class="w-12 h-12 bg-gradient-to-br from-primary to-green-700 rounded-lg flex items-center justify-center">
+            <i class="w-7 h-7 text-white" data-lucide="shield"></i>
+          </div>
+          <div class="hidden sm:block">
+            <span class="block text-xl font-display font-bold text-primary dark:text-white uppercase tracking-tight">Askari Bank</span>
+            <span class="block text-[10px] text-slate-500 dark:text-slate-400 tracking-widest uppercase">A Relationship You Can Bank On</span>
+          </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-6 absolute left-1/2 -translate-x-1/2">
+          <a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-green-400 font-medium transition-colors" href="index.html">Home</a>
+          <a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-green-400 font-medium transition-colors" href="about.html">About Us</a>
+          <a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-green-400 font-medium transition-colors" href="cards.html">Cards</a>
+
+        <div class="relative" @mouseenter="accountsOpen = true" @mouseleave="accountsOpen = false">
+            <button class="flex items-center gap-1 text-slate-700 dark:text-slate-100 hover:text-primary font-medium transition-colors">
+              Accounts <i class="w-4 h-4" data-lucide="chevron-down"></i>
+            </button>
+            <div class="absolute top-full left-0 mt-0 pt-4 w-60 bg-white dark:bg-slate-800 rounded-xl shadow-xl border border-slate-100 dark:border-slate-700 p-2" x-cloak x-show="accountsOpen" x-transition>
+              
+              <a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" href="current-account.html">
+                <i class="w-4 h-4 text-primary" data-lucide="refresh-cw"></i>
+                <div class="font-medium text-slate-900 dark:text-white text-sm">Current Account</div>
+              </a>
+
+              <a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" href="savings-account.html">
+                <i class="w-4 h-4 text-primary" data-lucide="trending-up"></i>
+                <div class="font-medium text-slate-900 dark:text-white text-sm">Savings Account</div>
+              </a>
+
+              <a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" href="women-account.html">
+                <i class="w-4 h-4 text-primary" data-lucide="user-round"></i>
+                <div class="font-medium text-slate-900 dark:text-white text-sm">Women Account</div>
+              </a>
+
+            </div>
+          </div>
+
+          <div class="relative" @mouseenter="bankingOpen = true" @mouseleave="bankingOpen = false">
+            <button class="flex items-center gap-1 text-slate-700 dark:text-slate-100 hover:text-primary font-medium transition-colors">
+              Banking <i class="w-4 h-4" data-lucide="chevron-down"></i>
+            </button>
+            <div class="absolute top-full left-0 mt-0 pt-4 w-60 bg-white dark:bg-slate-800 rounded-xl shadow-xl border border-slate-100 dark:border-slate-700 p-2" x-cloak x-show="bankingOpen" x-transition>
+              <a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" href="personal-banking.html">
+                <i class="w-4 h-4 text-primary" data-lucide="user"></i>
+                <div class="font-medium text-slate-900 dark:text-white text-sm">Personal Banking</div>
+              </a>
+              <a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" href="islamic-banking.html">
+                <i class="w-4 h-4 text-primary" data-lucide="moon"></i>
+                <div class="font-medium text-slate-900 dark:text-white text-sm">Islamic Banking</div>
+              </a>
+              <a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" href="corporate-banking.html">
+                <i class="w-4 h-4 text-primary" data-lucide="briefcase"></i>
+                <div class="font-medium text-slate-900 dark:text-white text-sm">Corporate Banking</div>
+              </a>
+              <a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" href="digital-banking.html">
+                <i class="w-4 h-4 text-primary" data-lucide="smartphone"></i>
+                <div class="font-medium text-slate-900 dark:text-white text-sm">Digital Banking</div>
+              </a>
+            </div>
+          </div>
+
+          <a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-green-400 font-medium transition-colors" href="contact.html">Contact</a>
+        </nav>
+
+        <div class="hidden lg:flex items-center gap-3">
+          <button class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" @click="darkMode = !darkMode; localStorage.setItem('darkMode-askari', darkMode); document.documentElement.classList.toggle('dark', darkMode)" aria-label="Toggle dark mode">
+            <i class="w-5 h-5 hidden dark:block" data-lucide="sun"></i>
+            <i class="w-5 h-5 block dark:hidden" data-lucide="moon"></i>
+          </button>
+          
+          <a class="px-4 py-2 border-2 border-primary text-primary dark:text-white dark:border-white/20 rounded-lg font-semibold hover:bg-primary hover:text-white transition-all text-sm" href="open-account.html">
+            Open an Account
+          </a>
+
+          <a class="px-5 py-2.5 bg-primary text-white rounded-lg font-semibold hover:bg-primary/90 transition-colors flex items-center gap-2 shadow-md shadow-primary/20 text-sm" href="login.html">
+            <i class="w-4 h-4" data-lucide="lock"></i> Login
+          </a>
+        </div>
+
+        <button class="lg:hidden p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800" @click="mobileMenuOpen = true">
+          <i class="w-6 h-6" data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>    
+  <!-- HEADER ENDED -->
+<main>
+      <section id="hero" class="pt-32 pb-20 bg-gradient-to-b from-slate-50 to-white dark:from-slate-800 dark:to-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-display font-bold text-slate-900 dark:text-white mb-6">A Legacy of Trust & Financial Excellence</h1>
+            <p class="text-xl text-slate-600 dark:text-slate-400">
+              Since 1991, Askari Bank has been a leading financial partner in Pakistan, committed to serving over 1.8 million customers with integrity and innovation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="our_story" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 class="text-3xl font-display font-bold text-slate-900 dark:text-white mb-6">Our Story</h2>
+              <p class="text-lg text-slate-600 dark:text-slate-400 mb-6">
+                Established in 1991, Askari Bank Limited has grown into a premier commercial bank headquartered in Islamabad. Following our acquisition by the <strong>Fauji Foundation</strong> in 2013, we have expanded our reach to over 650+ branches nationwide.
+              </p>
+              <p class="text-lg text-slate-600 dark:text-slate-400 mb-6">
+                We take pride in our diverse banking solutions, ranging from conventional retail and corporate services to our specialized <strong>Askari Ikhlas Islamic Banking</strong> division, which operates 140+ dedicated Shariah-compliant branches.
+              </p>
+              <p class="text-lg text-slate-600 dark:text-slate-400">
+                Today, we lead the way in digital transformation. With over 620,000 active mobile app users and a focus on SME and agricultural banking, we are empowering the economic future of Pakistan.
+              </p>
+            </div>
+            <div class="relative">
+              <img class="rounded-2xl shadow-xl" alt="Askari Bank Head Office" src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=500&fit=crop"/>
+              <div class="absolute -bottom-6 -left-6 bg-secondary text-primary p-6 rounded-xl shadow-lg border-2 border-white dark:border-slate-800">
+                <div class="text-4xl font-display font-bold">34+</div>
+                <div class="text-sm font-medium">Years of Heritage</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="our_values" class="py-20 bg-slate-50 dark:bg-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-display font-bold text-slate-900 dark:text-white mb-12 text-center">Our Core Values</h2>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <i class="w-8 h-8 text-primary dark:text-secondary" data-lucide="shield-check"></i>
+              </div>
+              <h3 class="text-xl font-display font-bold text-slate-900 dark:text-white mb-2">Integrity</h3>
+              <p class="text-slate-600 dark:text-slate-400">Maintaining the highest ethical standards in all financial dealings.</p>
+            </div>
+            <div class="text-center">
+              <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <i class="w-8 h-8 text-primary dark:text-secondary" data-lucide="smartphone"></i>
+              </div>
+              <h3 class="text-xl font-display font-bold text-slate-900 dark:text-white mb-2">Innovation</h3>
+              <p class="text-slate-600 dark:text-slate-400">Leading the digital frontier in Pakistan's banking sector.</p>
+            </div>
+            <div class="text-center">
+              <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <i class="w-8 h-8 text-primary dark:text-secondary" data-lucide="moon"></i>
+              </div>
+              <h3 class="text-xl font-display font-bold text-slate-900 dark:text-white mb-2">Shariah First</h3>
+              <p class="text-slate-600 dark:text-slate-400">Commitment to providing authentic Islamic banking solutions.</p>
+            </div>
+            <div class="text-center">
+              <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <i class="w-8 h-8 text-primary dark:text-secondary" data-lucide="award"></i>
+              </div>
+              <h3 class="text-xl font-display font-bold text-slate-900 dark:text-white mb-2">Excellence</h3>
+              <p class="text-slate-600 dark:text-slate-400">Ensuring premium service for retail and corporate clients.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="leadership_team" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 class="text-3xl font-display font-bold text-slate-900 dark:text-white mb-6">Our Leadership</h2>
+          <p class="text-lg text-slate-600 dark:text-slate-400 mb-12 max-w-2xl mx-auto">
+            Guided by a Board of Directors representing the Fauji Foundation and industry experts, our management team is dedicated to sustainable growth and customer satisfaction.
+          </p>
+          <div class="grid md:grid-cols-3 gap-12">
+            <div class="p-6">
+              <div class="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="w-10 h-10 text-primary dark:text-secondary" data-lucide="building"></i>
+              </div>
+              <h3 class="font-bold text-xl">Corporate Governance</h3>
+              <p class="text-slate-500">Adhering to the best practices set by the State Bank of Pakistan.</p>
+            </div>
+            <div class="p-6">
+              <div class="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="w-10 h-10 text-primary dark:text-secondary" data-lucide="users-2"></i>
+              </div>
+              <h3 class="font-bold text-xl">Shariah Board</h3>
+              <p class="text-slate-500">Renowned scholars ensuring Ikhlas Islamic Banking remains 100% compliant.</p>
+            </div>
+            <div class="p-6">
+              <div class="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="w-10 h-10 text-primary dark:text-secondary" data-lucide="microchip"></i>
+              </div>
+              <h3 class="font-bold text-xl">Digital Strategists</h3>
+              <p class="text-slate-500">Visionaries driving our award-winning mobile and internet banking platforms.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="recognition_awards" class="py-20 bg-primary dark:bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 class="text-3xl font-display font-bold text-white mb-12 text-secondary">Recognition & Achievements</h2>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="p-6 bg-white/10 rounded-xl border border-white/5">
+              <i class="w-10 h-10 text-secondary mx-auto mb-4" data-lucide="trophy"></i>
+              <h3 class="font-bold text-white mb-1">Best Digital Bank</h3>
+              <p class="text-sm text-white/60">Consumer Choice Awards</p>
+            </div>
+            <div class="p-6 bg-white/10 rounded-xl border border-white/5">
+              <i class="w-10 h-10 text-secondary mx-auto mb-4" data-lucide="landmark"></i>
+              <h3 class="font-bold text-white mb-1">Top Islamic Window</h3>
+              <p class="text-sm text-white/60">Banking Excellence Pakistan</p>
+            </div>
+            <div class="p-6 bg-white/10 rounded-xl border border-white/5">
+              <i class="w-10 h-10 text-secondary mx-auto mb-4" data-lucide="trending-up"></i>
+              <h3 class="font-bold text-white mb-1">SME Bank of the Year</h3>
+              <p class="text-sm text-white/60">Finance Asia Regional</p>
+            </div>
+            <div class="p-6 bg-white/10 rounded-xl border border-white/5">
+              <i class="w-10 h-10 text-secondary mx-auto mb-4" data-lucide="shield-check"></i>
+              <h3 class="font-bold text-white mb-1">Highest PACRA Rating</h3>
+              <p class="text-sm text-white/60">Long-term AA+ Stability</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="join_our_team" class="py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 class="text-3xl font-display font-bold text-slate-900 dark:text-white mb-6">Start Your Career with Askari</h2>
+          <p class="text-xl text-slate-600 dark:text-slate-400 mb-8">
+            Join a team of professionals driven by the Fauji Foundation’s values of service and nation-building.
+          </p>
+          <a class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white rounded-lg font-bold hover:bg-primary/90 transition-all shadow-lg hover:shadow-primary/30" href="careers.html">Explore Careers
+            <i class="w-5 h-5" data-lucide="arrow-right"></i>
+          </a>
+        </div>
+      </section>
+    </main>
+<!-- FOOTER -->
+     <footer class="bg-corporate text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-12">
+        <div class="lg:col-span-2">
+          <a class="flex items-center gap-3 mb-6" href="index.html">
+            <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
+              <i class="w-7 h-7 text-secondary" data-lucide="shield"></i>
+            </div>
+            <div>
+              <span class="block text-lg font-display font-bold text-white">Askari Bank</span>
+              <span class="block text-xs text-white/60 tracking-wide">A RELATIONSHIP YOU CAN BANK ON</span>
+            </div>
+          </a>
+          <p class="text-white/70 mb-6 max-w-sm">Empowering businesses and individuals with innovative banking solutions.</p>
+          <div class="flex items-center gap-4">
+            <a class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-secondary hover:text-corporate transition-colors" href="#"><i class="w-5 h-5" data-lucide="linkedin"></i></a>
+            <a class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-secondary hover:text-corporate transition-colors" href="#"><i class="w-5 h-5" data-lucide="twitter"></i></a>
+            <a class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-secondary hover:text-corporate transition-colors" href="#"><i class="w-5 h-5" data-lucide="facebook"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-display font-bold text-white mb-4">Banking</h4>
+          <ul class="space-y-3">
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="lending.html">Personal Banking</a></li>
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="services.html">Corporate Banking</a></li>
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="treasury.html">Islamic Banking</a></li>
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="services.html">Digital Banking</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-display font-bold text-white mb-4">Company</h4>
+          <ul class="space-y-3">
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="about.html">About Us</a></li>
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="careers.html">Careers</a></li>
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="news.html">News & Media</a></li>
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-display font-bold text-white mb-4">Support</h4>
+          <ul class="space-y-3">
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="faq.html">Help Center/FAQ's</a></li>
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="privacy.html">Privacy Policy</a></li>
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="terms.html">Terms of Service</a></li>
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="security.html">Security</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-white/60 text-sm">© 2024 Askari Bank. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<!-- HEAD  -->
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Askari Bank | A Relationship You Can Bank On</title>
+  <meta content="Askari Bank Pakistan - Offering Corporate, Consumer, Islamic and Digital Banking solutions." name="description" />
+  <meta content="askari bank, pakistan bank, internet banking, islamic banking, consumer finance" name="keywords" />
+
+  <meta content="Askari Bank" property="og:title" />
+  <meta content="A Relationship You Can Bank On." property="og:description" />
+  <meta content="website" property="og:type" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind.config.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <script defer="" src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link href="style.css" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script defer="" src="scripts.js"></script>
+</head>
+<!-- BODY -->
+<body class="font-sans bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-white antialiased bg-fixed" 
+  x-data="{ darkMode: document.documentElement.classList.contains('dark') }">
+<!-- HEADER -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/95 dark:bg-slate-900/95 border-b border-slate-200 dark:border-slate-800" x-data="{ mobileMenuOpen: false, bankingOpen: false, accountsOpen: false }">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20 relative">
+
+        <a class="flex items-center gap-3" href="index.html">
+          <div class="w-12 h-12 bg-gradient-to-br from-primary to-green-700 rounded-lg flex items-center justify-center">
+            <i class="w-7 h-7 text-white" data-lucide="shield"></i>
+          </div>
+          <div class="hidden sm:block">
+            <span class="block text-xl font-display font-bold text-primary dark:text-white uppercase tracking-tight">Askari Bank</span>
+            <span class="block text-[10px] text-slate-500 dark:text-slate-400 tracking-widest uppercase">A Relationship You Can Bank On</span>
+          </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-6 absolute left-1/2 -translate-x-1/2">
+          <a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-green-400 font-medium transition-colors" href="index.html">Home</a>
+          <a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-green-400 font-medium transition-colors" href="about.html">About Us</a>
+          <a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-green-400 font-medium transition-colors" href="cards.html">Cards</a>
+
+        <div class="relative" @mouseenter="accountsOpen = true" @mouseleave="accountsOpen = false">
+            <button class="flex items-center gap-1 text-slate-700 dark:text-slate-100 hover:text-primary font-medium transition-colors">
+              Accounts <i class="w-4 h-4" data-lucide="chevron-down"></i>
+            </button>
+            <div class="absolute top-full left-0 mt-0 pt-4 w-60 bg-white dark:bg-slate-800 rounded-xl shadow-xl border border-slate-100 dark:border-slate-700 p-2" x-cloak x-show="accountsOpen" x-transition>
+              
+              <a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" href="current-account.html">
+                <i class="w-4 h-4 text-primary" data-lucide="refresh-cw"></i>
+                <div class="font-medium text-slate-900 dark:text-white text-sm">Current Account</div>
+              </a>
+
+              <a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" href="savings-account.html">
+                <i class="w-4 h-4 text-primary" data-lucide="trending-up"></i>
+                <div class="font-medium text-slate-900 dark:text-white text-sm">Savings Account</div>
+              </a>
+
+              <a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" href="women-account.html">
+                <i class="w-4 h-4 text-primary" data-lucide="user-round"></i>
+                <div class="font-medium text-slate-900 dark:text-white text-sm">Women Account</div>
+              </a>
+
+            </div>
+          </div>
+
+          <div class="relative" @mouseenter="bankingOpen = true" @mouseleave="bankingOpen = false">
+            <button class="flex items-center gap-1 text-slate-700 dark:text-slate-100 hover:text-primary font-medium transition-colors">
+              Banking <i class="w-4 h-4" data-lucide="chevron-down"></i>
+            </button>
+            <div class="absolute top-full left-0 mt-0 pt-4 w-60 bg-white dark:bg-slate-800 rounded-xl shadow-xl border border-slate-100 dark:border-slate-700 p-2" x-cloak x-show="bankingOpen" x-transition>
+              <a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" href="personal-banking.html">
+                <i class="w-4 h-4 text-primary" data-lucide="user"></i>
+                <div class="font-medium text-slate-900 dark:text-white text-sm">Personal Banking</div>
+              </a>
+              <a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" href="islamic-banking.html">
+                <i class="w-4 h-4 text-primary" data-lucide="moon"></i>
+                <div class="font-medium text-slate-900 dark:text-white text-sm">Islamic Banking</div>
+              </a>
+              <a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" href="corporate-banking.html">
+                <i class="w-4 h-4 text-primary" data-lucide="briefcase"></i>
+                <div class="font-medium text-slate-900 dark:text-white text-sm">Corporate Banking</div>
+              </a>
+              <a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" href="digital-banking.html">
+                <i class="w-4 h-4 text-primary" data-lucide="smartphone"></i>
+                <div class="font-medium text-slate-900 dark:text-white text-sm">Digital Banking</div>
+              </a>
+            </div>
+          </div>
+
+          <a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-green-400 font-medium transition-colors" href="contact.html">Contact</a>
+        </nav>
+
+        <div class="hidden lg:flex items-center gap-3">
+          <button class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" @click="darkMode = !darkMode; localStorage.setItem('darkMode-askari', darkMode); document.documentElement.classList.toggle('dark', darkMode)" aria-label="Toggle dark mode">
+            <i class="w-5 h-5 hidden dark:block" data-lucide="sun"></i>
+            <i class="w-5 h-5 block dark:hidden" data-lucide="moon"></i>
+          </button>
+          
+          <a class="px-4 py-2 border-2 border-primary text-primary dark:text-white dark:border-white/20 rounded-lg font-semibold hover:bg-primary hover:text-white transition-all text-sm" href="open-account.html">
+            Open an Account
+          </a>
+
+          <a class="px-5 py-2.5 bg-primary text-white rounded-lg font-semibold hover:bg-primary/90 transition-colors flex items-center gap-2 shadow-md shadow-primary/20 text-sm" href="login.html">
+            <i class="w-4 h-4" data-lucide="lock"></i> Login
+          </a>
+        </div>
+
+        <button class="lg:hidden p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800" @click="mobileMenuOpen = true">
+          <i class="w-6 h-6" data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+<!-- HEADER ENDED -->
+<main>
+  <section id="sahar_hero" class="pt-32 pb-20 bg-gradient-to-br from-primary to-slate-900 text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="inline-block px-4 py-1 bg-secondary text-primary font-bold rounded-full text-sm mb-6">Askari Sahar Account</span>
+          <h1 class="text-4xl md:text-5xl font-display font-bold mb-6">Banking with Freedom, <br/><span class="text-secondary">Built for Her.</span></h1>
+          <p class="text-xl text-white/80 mb-8 leading-relaxed">
+            Designed to make everyday banking seamless while empowering you with financial independence. Step into a brighter financial future with benefits tailored for your ambition and growth.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="#apply_form" class="px-8 py-4 bg-secondary text-primary rounded-lg font-bold hover:bg-white transition-all shadow-lg">Open Your Account</a>
+            <a href="#benefits" class="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg font-bold hover:bg-white/20 transition-all">View Exclusive Benefits</a>
+          </div>
+        </div>
+        <div class="hidden lg:block relative">
+           <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=600&fit=crop" alt="Empowered Woman" class="rounded-3xl shadow-2xl border-4 border-white/10" />
+           <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl">
+             <p class="text-primary font-bold text-lg">No Minimum Balance</p>
+             <p class="text-slate-500 text-sm">Financial freedom at your fingertips</p>
+           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="benefits" class="py-20 bg-white dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-display font-bold text-slate-900 dark:text-white mb-4">Exclusive Sahar Privileges</h2>
+        <p class="text-slate-600 dark:text-slate-400">Tailored benefits that support your lifestyle and secure your future.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-8 bg-slate-50 dark:bg-slate-800 rounded-3xl border border-slate-100 dark:border-slate-700 hover:shadow-md transition-all">
+          <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+            <i class="w-6 h-6 text-primary dark:text-secondary" data-lucide="lock"></i>
+          </div>
+          <h3 class="font-bold text-xl mb-3">50% Locker Discount</h3>
+          <p class="text-slate-600 dark:text-slate-400">Keep your valuables secure with a 50% discount on first-year locker rentals.*</p>
+        </div>
+        <div class="p-8 bg-slate-50 dark:bg-slate-800 rounded-3xl border border-slate-100 dark:border-slate-700 hover:shadow-md transition-all">
+          <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+            <i class="w-6 h-6 text-primary dark:text-secondary" data-lucide="trending-up"></i>
+          </div>
+          <h3 class="font-bold text-xl mb-3">Sahar Term Deposits</h3>
+          <p class="text-slate-600 dark:text-slate-400">Exclusive access to Sahar Term Deposits with attractive profit rates for your savings.</p>
+        </div>
+        <div class="p-8 bg-slate-50 dark:bg-slate-800 rounded-3xl border border-slate-100 dark:border-slate-700 hover:shadow-md transition-all">
+          <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+            <i class="w-6 h-6 text-primary dark:text-secondary" data-lucide="smartphone"></i>
+          </div>
+          <h3 class="font-bold text-xl mb-3">Digital Empowerment</h3>
+          <p class="text-slate-600 dark:text-slate-400">Seamless digital account opening and full I-Net banking access from anywhere.</p>
+        </div>
+      </div>
+
+      <div class="mt-20 p-8 md:p-12 bg-primary dark:bg-slate-800 rounded-[3rem] text-white">
+        <div class="grid lg:grid-cols-2 gap-12">
+          <div>
+            <h2 class="text-3xl font-display font-bold mb-6">Complimentary Services</h2>
+            <p class="text-white/70 mb-8">Enjoy these premium banking features at zero cost with your Askari Sahar Account.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="flex items-center gap-3"><i class="w-5 h-5 text-secondary" data-lucide="check-circle"></i> First Debit Card Issuance</div>
+              <div class="flex items-center gap-3"><i class="w-5 h-5 text-secondary" data-lucide="check-circle"></i> First Cheque Book</div>
+              <div class="flex items-center gap-3"><i class="w-5 h-5 text-secondary" data-lucide="check-circle"></i> Banker's Cheque Issuance</div>
+              <div class="flex items-center gap-3"><i class="w-5 h-5 text-secondary" data-lucide="check-circle"></i> Unlimited SMS Alerts</div>
+              <div class="flex items-center gap-3"><i class="w-5 h-5 text-secondary" data-lucide="check-circle"></i> I-Net Banking Access</div>
+              <div class="flex items-center gap-3"><i class="w-5 h-5 text-secondary" data-lucide="check-circle"></i> Inter-Branch Deposits</div>
+            </div>
+          </div>
+          <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/10">
+            <h3 class="text-xl font-bold mb-6">Eligibility</h3>
+            <ul class="space-y-4">
+              <li class="flex items-center gap-4">
+                <span class="w-10 h-10 bg-secondary/20 rounded-full flex items-center justify-center text-secondary font-bold">1</span>
+                <span>Female Individuals (Singly or Jointly)</span>
+              </li>
+              <li class="flex items-center gap-4">
+                <span class="w-10 h-10 bg-secondary/20 rounded-full flex items-center justify-center text-secondary font-bold">2</span>
+                <span>Female Proprietorship Concerns</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="apply_form" class="py-20 bg-slate-50 dark:bg-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-5 gap-12">
+        
+        <div class="lg:col-span-2 text-center lg:text-left">
+          <h2 class="text-3xl font-display font-bold text-slate-900 dark:text-white mb-6">Apply Digitally</h2>
+          <p class="text-slate-600 dark:text-slate-400 mb-10">Scan the QR code to download the Askari Mobile App and open your Sahar account instantly from your smartphone.</p>
+          
+          <div class="bg-white dark:bg-slate-900 p-6 rounded-3xl shadow-sm inline-block mb-8">
+            <div class="w-48 h-48 bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-400 mb-4 rounded-xl">
+               <i class="w-20 h-20" data-lucide="qr-code"></i>
+            </div>
+            <p class="text-xs font-bold text-center uppercase tracking-wider text-slate-500">Scan for iOS & Android</p>
+          </div>
+
+          <div class="flex justify-center lg:justify-start gap-4">
+            <a href="#" class="px-6 py-3 bg-slate-900 text-white rounded-xl flex items-center gap-2 hover:bg-black transition-all">
+              <i class="w-5 h-5" data-lucide="apple"></i> App Store
+            </a>
+            <a href="#" class="px-6 py-3 bg-slate-900 text-white rounded-xl flex items-center gap-2 hover:bg-black transition-all">
+              <i class="w-5 h-5" data-lucide="smartphone"></i> Play Store
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-3">
+          <div class="bg-white dark:bg-slate-900 p-8 md:p-10 rounded-3xl shadow-xl border border-slate-100 dark:border-slate-800">
+            <h3 class="text-2xl font-bold mb-8 text-slate-900 dark:text-white">Apply for Sahar Account</h3>
+            <form action="#" class="grid md:grid-cols-2 gap-6">
+              <div class="space-y-1">
+                <label class="text-sm font-bold text-slate-700 dark:text-slate-300">First Name *</label>
+                <input type="text" placeholder="Muhammad" class="w-full p-3 rounded-xl border border-slate-200 dark:border-slate-700 dark:bg-slate-800 outline-none focus:ring-2 focus:ring-primary">
+              </div>
+              <div class="space-y-1">
+                <label class="text-sm font-bold text-slate-700 dark:text-slate-300">Last Name</label>
+                <input type="text" placeholder="Ali" class="w-full p-3 rounded-xl border border-slate-200 dark:border-slate-700 dark:bg-slate-800 outline-none focus:ring-2 focus:ring-primary">
+              </div>
+              <div class="space-y-1">
+                <label class="text-sm font-bold text-slate-700 dark:text-slate-300">Email *</label>
+                <input type="email" placeholder="example@email.com" class="w-full p-3 rounded-xl border border-slate-200 dark:border-slate-700 dark:bg-slate-800 outline-none focus:ring-2 focus:ring-primary">
+              </div>
+              <div class="space-y-1">
+                <label class="text-sm font-bold text-slate-700 dark:text-slate-300">Phone *</label>
+                <input type="tel" placeholder="(+92) 123 4567" class="w-full p-3 rounded-xl border border-slate-200 dark:border-slate-700 dark:bg-slate-800 outline-none focus:ring-2 focus:ring-primary">
+              </div>
+              <div class="space-y-1">
+                <label class="text-sm font-bold text-slate-700 dark:text-slate-300">CNIC Number *</label>
+                <input type="text" placeholder="XXXXX-XXXXXXX-X" class="w-full p-3 rounded-xl border border-slate-200 dark:border-slate-700 dark:bg-slate-800 outline-none focus:ring-2 focus:ring-primary">
+              </div>
+              <div class="space-y-1">
+                <label class="text-sm font-bold text-slate-700 dark:text-slate-300">Date of Birth *</label>
+                <input type="date" class="w-full p-3 rounded-xl border border-slate-200 dark:border-slate-700 dark:bg-slate-800 outline-none focus:ring-2 focus:ring-primary">
+              </div>
+              <div class="space-y-1">
+                <label class="text-sm font-bold text-slate-700 dark:text-slate-300">City Name *</label>
+                <input type="text" placeholder="Enter city name" class="w-full p-3 rounded-xl border border-slate-200 dark:border-slate-700 dark:bg-slate-800 outline-none focus:ring-2 focus:ring-primary">
+              </div>
+              <div class="space-y-1">
+                <label class="text-sm font-bold text-slate-700 dark:text-slate-300">Net Monthly Income</label>
+                <input type="number" placeholder="Enter income" class="w-full p-3 rounded-xl border border-slate-200 dark:border-slate-700 dark:bg-slate-800 outline-none focus:ring-2 focus:ring-primary">
+              </div>
+              <div class="md:col-span-2 space-y-1">
+                <label class="text-sm font-bold text-slate-700 dark:text-slate-300">Product</label>
+                <input type="text" value="Askari Sahar Current Account" readonly class="w-full p-3 rounded-xl border border-slate-100 bg-slate-50 dark:bg-slate-800 dark:border-slate-700 text-slate-400">
+              </div>
+              <div class="md:col-span-2">
+                <p class="text-xs text-slate-500 mb-6 italic">Submitting this form does not guarantee approval. Our representative will contact you for documentation.</p>
+                <button type="submit" class="w-full py-4 bg-primary text-white rounded-xl font-bold hover:bg-primary/90 transition-all shadow-lg">Submit Application</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+<!-- FOOTER  -->
+  <footer class="bg-corporate text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-12">
+        <div class="lg:col-span-2">
+          <a class="flex items-center gap-3 mb-6" href="index.html">
+            <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
+              <i class="w-7 h-7 text-secondary" data-lucide="shield"></i>
+            </div>
+            <div>
+              <span class="block text-lg font-display font-bold text-white">Askari Bank</span>
+              <span class="block text-xs text-white/60 tracking-wide">A RELATIONSHIP YOU CAN BANK ON</span>
+            </div>
+          </a>
+          <p class="text-white/70 mb-6 max-w-sm">Empowering businesses and individuals with innovative banking solutions.</p>
+          <div class="flex items-center gap-4">
+            <a class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-secondary hover:text-corporate transition-colors" href="#"><i class="w-5 h-5" data-lucide="linkedin"></i></a>
+            <a class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-secondary hover:text-corporate transition-colors" href="#"><i class="w-5 h-5" data-lucide="twitter"></i></a>
+            <a class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-secondary hover:text-corporate transition-colors" href="#"><i class="w-5 h-5" data-lucide="facebook"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-display font-bold text-white mb-4">Banking</h4>
+          <ul class="space-y-3">
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="lending.html">Personal Banking</a></li>
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="services.html">Corporate Banking</a></li>
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="treasury.html">Islamic Banking</a></li>
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="services.html">Digital Banking</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-display font-bold text-white mb-4">Company</h4>
+          <ul class="space-y-3">
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="about.html">About Us</a></li>
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="careers.html">Careers</a></li>
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="news.html">News & Media</a></li>
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-display font-bold text-white mb-4">Support</h4>
+          <ul class="space-y-3">
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="faq.html">Help Center/FAQ's</a></li>
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="privacy.html">Privacy Policy</a></li>
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="terms.html">Terms of Service</a></li>
+            <li><a class="text-white/70 hover:text-secondary transition-colors" href="security.html">Security</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-white/60 text-sm">© 2024 Askari Bank. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
